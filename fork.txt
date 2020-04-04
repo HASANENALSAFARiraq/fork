@@ -1,0 +1,19 @@
+#include<unistd.h>
+#include<stdio.h>
+#include<sys/types.h>
+#include<stdlib.h>
+
+int main()
+{
+	int pid;
+	pid=fork();
+	if(pid==0)
+	{
+		printf("child fork");
+	}
+	if(pid>0)//process is parent
+	{
+	printf( "parent fork");
+	}
+      return 0;
+}

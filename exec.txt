@@ -1,0 +1,17 @@
+#include<unistd.h>
+#include<stdio.h>
+#include<sys/types.h>
+#include<stdlib.h>
+
+int main()
+{
+	printf("exec.c process \n");
+	///////////////////////////
+	printf("pid ofexec.c %d \n,getpid()");
+	char *args[]={./fork.NULL};
+	//////////////////////////
+	execv(arags[0],arags);
+	printf("back to exec.c process \n");
+	/////////////////////////
+      return 0;
+}
